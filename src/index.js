@@ -5,8 +5,8 @@ const path = require('path');
 
 app.get('/lessons', (req, res) => {
   res.json([
-    { topic : 'math' , location : 'London' , price : 100 },
-    { topic : 'math' , location : 'Liverpool' , price : 80 },
+    { topic : 'maths' , location : 'London' , price : 100 },
+    { topic : 'maths' , location : 'Liverpool' , price : 80 },
     { topic : 'math' , location : 'Oxford' , price : 90 },
     { topic : 'math' , location : 'Bristol' , price : 120 }
     ]);
