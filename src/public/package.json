@@ -1,0 +1,14 @@
+{
+  "name": "courseworkthree",
+  "version": "1.0.0",
+  "description": "Course Work Three",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "author": "Gabriel Nwogu",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
