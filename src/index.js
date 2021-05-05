@@ -6,7 +6,7 @@ const path = require('path');
 app.get('/lessons', (req, res) => {
   res.json([
     { topic : 'maths' , location : 'London' , price : 100 },
-    { topic : 'maths' , location : 'Liverpool' , price : 80 },
+    { topic : 'maths' , location : 'Liverpool' , price : 200 },
     { topic : 'maths' , location : 'Oxford' , price : 90 },
     { topic : 'maths' , location : 'Bristol' , price : 120 }
     ]);
