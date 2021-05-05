@@ -1,12 +1,12 @@
 {
-  "name": "courseworkthree",
+  "name": "individualcoursework2",
   "version": "1.0.0",
-  "description": "Course Work Three",
+  "description": "individual Coursework2",
   "main": "index.js",
   "scripts": {
     "start": "node src/index.js"
   },
-  "author": "Gabriel Nwogu",
+  "author": "Praise Oma",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1"
