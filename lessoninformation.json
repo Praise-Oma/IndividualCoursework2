@@ -1,0 +1,33 @@
+[{
+  "_id": {
+    "$oid": "6093fbb23e980578d0387844"
+  },
+  "topic": "Math",
+  "price": 100,
+  "location": "London",
+  "space": 5
+},{
+  "_id": {
+    "$oid": "6093fbcc3e980578d0387845"
+  },
+  "topic": "Math",
+  "price": 100,
+  "location": "Sunderland",
+  "space": 5
+},{
+  "_id": {
+    "$oid": "6093fbe83e980578d0387846"
+  },
+  "topic": "Math",
+  "price": 100,
+  "location": "Oxford",
+  "space": 5
+},{
+  "_id": {
+    "$oid": "6093fbfd3e980578d0387847"
+  },
+  "topic": "Math",
+  "price": 100,
+  "location": "Brighton",
+  "space": 5
+}]
