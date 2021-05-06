@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express Server</title>
+
+    <!-- Bootstrap CSS library -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- Vue JS -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+
+        <main>
+            <div v-if= "showProduct"></div>
+            <figure>
+                <img v-bind:src="https://mydigitalbackpack.net/wp-content/uploads/2019/08/chem.jpg" style="float: leftt; width: 450px; height: 350px;">
+                </figure>
+        </main>
+        <div class="container-fluid" style="margin-top: 50px;">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+                <div class="col" v-for="lesson in lessons">
+                    <div class="card shadow-sm">
+                        <div class="card-body" id="startShopping">
+                            <ul>
+                                <li>
+                                    topic: {{ lesson.topic}}
+                                </li>
+                                <li>
+                                    location: {{ lesson.location}}
+                                </li>
+                                <li>
+                                    price: {{ lesson.price}}
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var webstore = new Vue({
+            el: '#app',
+            data: {
+                sitename: 'Express Server',
+                lessons: [],
+                image: "image/chemistryy.jpg",
+            }
+        })
+    </script>
+
+    <script>
+        fetch("/lessons")
+            .then((response) => response.json())
+            .then((response) => webstore.lessons = response);
+    </script>
+</body>
+</html>
