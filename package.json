@@ -1,0 +1,16 @@
+{
+  "name": "individualcoursework2",
+  "version": "1.0.0",
+  "description": "individual coursework 2",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "author": "Praise Oma",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongodb": "^3.6.6"
+  }
+}
